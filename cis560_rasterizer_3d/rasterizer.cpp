@@ -1,8 +1,7 @@
 #include "rasterizer.h"
-#include "segment.h"
 
 Rasterizer::Rasterizer(const std::vector<Polygon>& polygons)
-    : m_polygons(polygons), m_camera()
+    : m_polygons(polygons)
 {}
 
 QImage Rasterizer::RenderScene()
