@@ -14,6 +14,8 @@ QImage Rasterizer::RenderScene()
     // the function doesn't return anything).
     // BEWARE! If you use a function that is missing its return statement,
     // it will return garbage memory!
+
+    return QImage(512, 512, QImage::Format_RGB32);
 }
 
 void Rasterizer::ClearScene()
